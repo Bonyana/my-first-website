@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Ikanyeng Molemele | Developer</title>
-  <style>
-    :root{--blue:#0d47a1;--soft:#90caf9}
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:#f7f8fb;
-      color:#222;
-      display:flex;
-      justify-content:center;
-      padding:30px 16px;
-    }
-    .container{max-width:760px;width:100%;text-align:center}
-    header{
-      background:linear-gradient(180deg,var(--blue),#123c7a);
-      color:#fff;
-      padding:48px 20px;
-      border-radius:12px;
-      box-shadow:0 8px 30px rgba(12,35,70,0.12);
-    }
-    .profile-photo{
-      width:170px;height:170px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.9);display:block;margin:0 auto 18px;
-    }
-    h1{font-size:1.9rem;margin:0 0 6px}
-    h2{margin:0;color:var(--soft);font-weight:500;font-size:1.1rem}
-    main{margin-top:22px;background:#fff;padding:22px;border-radius:10px;box-shadow:0 6px 18px rgba(10,20,40,0.04)}
-    main h3{margin:0 0 10px}
-    footer{margin-top:18px;text-align:center;color:#6b7280;font-size:0.95rem}
-    @media (max-width:520px){
-      .profile-photo{width:140px;height:140px}
-      h1{font-size:1.5rem}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff; /* soft light blue */
+            color: #003366; /* dark navy for contrast */
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: white;
+            color: #003366;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        img {
+            
+    display: block;
+    margin: 40px auto;
+    border-radius: 50%; /* makes the image round */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+}
+
+        
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto 50px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: white;
+            text-align: center;
+            color: #003366;
+            padding: 15px;
+            font-size: 0.9em;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
     <header>
-      <!-- Make sure DSC08383.jpg exists in the same folder as index.html -->
-      <img src="DSC08383.jpg" alt="Ikanyeng Molemele" class="profile-photo" />
-      <h1>Ikanyeng Molemele</h1>
-      <h2>Developer</h2>
+        <h1>Welcome to My First Website</h1>
+        <p>Created by Ikanyeng 🌸</p>
     </header>
 
-    <main>
-      <h3>Welcome back! 🎉</h3>
-      <p>This is my updated personal website, hosted on GitHub Pages.</p>
-    </main>
+    <!-- Your photo -->
+    <img src="images/ikanyeng.jpg" alt="Ikanyeng Molemele">
+
+    <p>
+        This is my first personal website — a space where I share ideas, learning journeys, and my digital story.
+        <br><br>
+        I’m exploring how creativity and technology come together to make a positive impact.
+    </p>
 
     <footer>
-      © <span id="year"></span> Ikanyeng Molemele
+        <p>© 2025 Ikanyeng Molemele. All Rights Reserved.</p>
     </footer>
-  </div>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
